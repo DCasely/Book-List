@@ -17,7 +17,7 @@ class UI {
     <td>${book.title}</td>
     <td>${book.author}</td>
     <td>${book.isbn}</td>
-    <td><a href='#' class= "delete"><i class="fas fa-trash-alt"></i></a></td>
+    <td><a href='#'><i class="delete fas fa-trash-alt"></i></a></td>
   `;
 
     list.appendChild(row);
@@ -30,7 +30,7 @@ class UI {
   }
 
   deleteBook(target) {
-    if (target.className === 'delete') {
+    if (target.classList.contains('delete')) {
       target.parentElement.parentElement.parentElement.remove();
     }
   }
@@ -159,6 +159,7 @@ function deleteBook(e) {
 
   // DELETE BOOK ROW
   ui.deleteBook(e.target);
+  console.log(e.target);
 
   // Remove from LS
   Store.removeBook(

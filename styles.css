@@ -1,3 +1,37 @@
+body {
+  background: url(./books-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+}
+
+i {
+  color: #fff;
+}
+
+i:hover {
+  color: red;
+}
+
+#submit {
+  color: #fff;
+  background-color: rgb(53, 53, 53);
+}
+
 .success,
 .error {
   color: white;
